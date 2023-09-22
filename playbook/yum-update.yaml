@@ -1,10 +1,10 @@
- hosts: "{{ hosts }}"
+- hosts: "{{ hosts }}"
 
   become: yes
   tasks:
 
   - name: install core packages
-    yum:
+    apt:
       name:
         - prometheus-node-exporter
         - nfs-common
