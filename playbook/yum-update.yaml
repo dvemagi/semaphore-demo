@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: install core packages
-    apt:
+    yum:
       name:
         - prometheus-node-exporter
         - nfs-common
