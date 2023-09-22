@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: hosts: "{{ hosts }}"
   become: yes
   tasks:
   - name: install core packages
