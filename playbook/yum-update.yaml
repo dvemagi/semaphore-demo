@@ -4,5 +4,5 @@
   tasks:
   - name: Upgrade all packages
     ansible.builtin.dnf:
-    name: "*"
-    state: latest
+     name: "*"
+     state: latest
