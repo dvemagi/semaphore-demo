@@ -2,9 +2,7 @@
 - hosts: all
   become: yes
   tasks:
-  - name: install core packages
-    yum:
-      name:
-        - prometheus-node-exporter
-        - nfs-common
-      update_cache: yes
+  - name: Upgrade all packages
+    ansible.builtin.dnf:
+    name: "*"
+    state: latest
