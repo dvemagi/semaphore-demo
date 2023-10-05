@@ -2,6 +2,8 @@
 - hosts: all
   become: yes
   user: fedora
+  environment:
+    ANSIBLE_HOST_KEY_CHECKING: false
   tasks:
   - name: Upgrade all packages
     ansible.builtin.dnf:
