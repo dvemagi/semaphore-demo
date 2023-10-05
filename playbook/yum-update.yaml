@@ -1,6 +1,7 @@
 ---
 - hosts: all
   become: yes
+  user: fedora
   tasks:
   - name: Upgrade all packages
     ansible.builtin.dnf:
